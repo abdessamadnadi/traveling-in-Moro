@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header{
+    max-width: 1200px;
+   
+}
+
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(morroco.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    padding-left: 8%;
+    padding-right: 8%;
+   
+     
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 12%;
+    width: 100%;
+    display: flex;
+align-items: center;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+.icon-bar{
+   background-color: rgba(230, 224, 224, 0.646);
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  margin-left: 40px;
+  display: none;
+}
+nav{
+flex: 1;
+text-align: right;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 60px;
+}
+nav ul li a {
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-size: 14px;
+   
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease 0px;
+}
+.text{
+    height: 88%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.title{ 
+    flex-basis: 50%;
+
+}
+h1{
+    color: #fff;
+    font-size: 90px;
+}
+p{
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 5px;
+}
+button{
+    color: #fff;
+    background-color: #fca311;
+    width: 180px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: solid;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+button:hover{
+    opacity: 0.8;
+}
+button:active{
+    opacity: 0.6 ;
+}
+
+
+.card{
+    height: 230px;
+    width: 250px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    padding: 15px 25px;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition:transform 0.5s;
+    display: inline-block;
+
+}
+.card1{
+    background-image: url(image-4.jpeg);
+}
+.card2{
+    background-image: url(image-3.jpg);
+}.card3{
+    background-image: url(image-1.jpg);
+}.card4{
+    background-image: url(image-2.jpg);
+}
+.card:hover{
+    transform:translateY(-10px)
+}
+
+
+
+@media only screen and (max-width:700px)
+{
+    *{
+        box-sizing: border-box;
+
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+     
+    
+    }
+    
+   
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        padding-left: 8%;
+        padding-right: 8%;
+background-color: rgba(216, 216, 216, 0.381)
+    }
+    button{
+        color: #fff;
+        background-color: #fca311;
+        width: 180px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border: solid;
+        border: none;
+        border-radius: 80px;
+        cursor: pointer;
+        margin-top: 30px;
+    }
+    button:hover{
+        opacity: 0.8;
+    }
+    button:active{
+        opacity: 0.6 ;
+    }
+    
+nav ul li a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    margin: auto;
+  
+    background: #fca311;
+    display: block;
+    transition: 0.5s;
+   
+}
+nav ul li a:hover::after{
+width: 100%;
+background:#fca311;
+
+
+}
+    p{
+        color: #fff;
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 5px;
+
+    }
+    
+    .navbar{
+        height: 50px;
+        width: 100%;
+        display: flex;
+    align-items: center;
+    }
+    nav{
+        flex: 1;
+        text-align: right;
+        }
+    .logo{
+        width: 130px;
+        cursor: pointer;
+    }
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin-left: 5px;
+    }
+    nav ul li a {
+        font-size: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        font-size: 14px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+  
+
+
+    .container{
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(morroco.jpg);
+        background-position: center;
+        background-size: cover;
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+
+    }
+   
+        .text{
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        h1{
+            color: #fff;
+            font-size: 40px;
+
+            
+        }
+    .cards{
+
+        display: flex;
+        max-width: 300px;
+        align-items: center;
+        flex-direction: column;
+     
+    }
+    .card{
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        margin: 10px 15px;
+        padding: 15px 25px;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition:transform 0.5s;
+        position: relative;
+
+ 
+    }
+    .cards h5{
+        font-size: 9.5px;
+        position: absolute;
+        top: 2px;
+    }
+    .cards p{
+        font-size: 10px;
+        width: 50px;
+        bottom: 5px;
+        position: absolute;
+    }
+    .card1{
+        background-image: url(image-4.jpeg);
+    }
+    .card2{
+        background-image: url(image-3.jpg);
+    }.card3{
+        background-image: url(image-1.jpg);
+    }.card4{
+        background-image: url(image-2.jpg);
+    }
+    .card:hover{
+        transform:translateY(-10px)
+    }
+    
+   
+}
